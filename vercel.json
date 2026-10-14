@@ -1,0 +1,11 @@
+{
+  "rewrites": [{ "source": "/", "destination": "/play8.html" }],
+  "headers": [
+    {
+      "source": "/(.*)\\.wasm",
+      "headers": [
+        { "key": "Content-Type", "value": "application/wasm" }
+      ]
+    }
+  ]
+}
